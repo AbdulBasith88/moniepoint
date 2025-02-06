@@ -46,26 +46,26 @@ when the range is across the partitioning. It is possible with partitioning key 
 
 Comparison on a few required features
 
-MongoDB
-Data Model: Document-based (JSON-like BSON)
-Fault Tolerance: Replica sets
-Partitioning: Sharding with shard keys
-Replication: Replica sets (Primary-Secondary)
-Range Queries: Supported on indexed fields
-Consistency: Tunable with read/write concerns
-Automatic Failover:    Built-in with replica sets
+MongoDB<br>
+Data Model: Document-based (JSON-like BSON)<br>
+Fault Tolerance: Replica sets<br>
+Partitioning: Sharding with shard keys<br>
+Replication: Replica sets (Primary-Secondary)<br>
+Range Queries: Supported on indexed fields<br>
+Consistency: Tunable with read/write concerns<br>
+Automatic Failover:    Built-in with replica sets<br>
 
-Cassandra
-Data Model: Wide-column (Keyspace/Table/Row)
-Fault Tolerance: Replication within data centers
-Partitioning: Partitioning by primary key
-Replication: Consistent hashing
-Range Queries: Supported within partitions
-Consistency: Tunable consistency levels
-Automatic Failover: Built-in with replication
+Cassandra<br>
+Data Model: Wide-column (Keyspace/Table/Row)<br>
+Fault Tolerance: Replication within data centers<br>
+Partitioning: Partitioning by primary key<br>
+Replication: Consistent hashing<br>
+Range Queries: Supported within partitions<br>
+Consistency: Tunable consistency levels<br>
+Automatic Failover: Built-in with replication<br>
 
 <h3> MongoDB Sharding </h3>
-MongoDB's sharding feature enables horizontal scaling by distributing data across multiple servers (shards). This helps manage datasets larger than RAM and ensures high performance.
+MongoDB's sharding feature enables horizontal scaling by distributing data across multiple servers (shards). This helps manage datasets larger than RAM and ensures high performance.<br>
 Each shard should be a replica set to provide fault tolerance.
 
 To handle data larger than RAM, focus on optimizing access patterns to minimize disk I/O:
@@ -76,7 +76,7 @@ Ensure the key field is indexed. In MongoDB, the shard key is automatically inde
 Add secondary indexes if range queries or specific filters are frequent.
 Range Queries:
 
-Utilize the $gte and $lte operators for range queries, which are efficient if the shard key or indexed field is used.
+Utilize the \$gte and \$lte operators for range queries, which are efficient if the shard key or indexed field is used.
 Batch Operations:
 
 Use batch inserts and updates to reduce the number of disk writes.
