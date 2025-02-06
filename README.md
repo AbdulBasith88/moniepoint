@@ -5,12 +5,12 @@ The supported operations are adding a key-value pair, extracting it, deleting, r
 batch insertion.
 
 <h2> Required software </h2>
-1. Jdk >17 
-2. Apache Maven >3.8.1
-3. MongoDB >5
-4. Redis >7.4
-5. Docker 4.37.1
-5. Editor. I used IntelliJ Community edition 2024.3.2.2
+1. Jdk >17 <br>
+2. Apache Maven >3.8.1 <br>
+3. MongoDB >5 <br>
+4. Redis >7.4 <br>
+5. Docker 4.37.1 <br>
+5. Editor. I used IntelliJ Community edition 2024.3.2.2 <br>
 
 <h2> Installation and execution of the application </h2>
 <h3>1. Clone the repository</h3>
